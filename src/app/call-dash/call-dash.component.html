@@ -1,0 +1,14 @@
+<div class="row border h-75 no-gutters">
+    <div class="col-9 bg-light border h-100 d-flex justify-content-center overlay-container" >
+
+        <video class="border border-danger w-100 h-100" #myVideo>
+        </video>
+        
+    </div>
+</div>
+
+<div class="row flex-nowrap room-members">
+    <div class="col" *ngFor="let mitronPeer of mitronPeers">
+        <video [id]="mitronPeer?.peerId" class="h-100 border border-danger" #peerVideo></video>
+    </div>
+</div>
